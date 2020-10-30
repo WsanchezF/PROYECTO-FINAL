@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LogIn</servlet-name>
+        <servlet-class>modelo.LogIn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Crud</servlet-name>
+        <servlet-class>modelo.Crud</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlOrden</servlet-name>
+        <servlet-class>modelo.ControlOrden</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogIn</servlet-name>
+        <url-pattern>/LogIn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Crud</servlet-name>
+        <url-pattern>/Crud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlOrden</servlet-name>
+        <url-pattern>/ControlOrden</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
